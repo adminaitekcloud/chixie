@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>430564149345-d7e62n6pat758j8gq75rj4k7mq20elgn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.430564149345-d7e62n6pat758j8gq75rj4k7mq20elgn</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>430564149345-1ts2df4fubv67mdd0sgkqrnumk3eds44.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDl3ZmLMT1CVx6cfUJrml22ZTAHvXDJVUk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>430564149345</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.gameplaychixiehub.io</string>
+	<key>PROJECT_ID</key>
+	<string>master23-9c6a4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>master23-9c6a4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:430564149345:ios:3f269c8e470e6fa1ca0220</string>
+	<key>DATABASE_URL</key>
+	<string>https://master23-9c6a4-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

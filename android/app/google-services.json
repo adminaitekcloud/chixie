@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "430564149345",
+    "firebase_url": "https://master23-9c6a4-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "master23-9c6a4",
+    "storage_bucket": "master23-9c6a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430564149345:android:612ccc75fd490163ca0220",
+        "android_client_info": {
+          "package_name": "com.gameplaychixiehub.io"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430564149345-8lpd40umm24dp18s25465ln8689minh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gameplaychixiehub.io",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "430564149345-s31eoc932ar0l6u0rf8491q48cfh820d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB79fIircqx1sxs800OY7XPutMNPMK6xEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104215450841844687074",
+              "client_type": 3
+            },
+            {
+              "client_id": "430564149345-d7e62n6pat758j8gq75rj4k7mq20elgn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gameplaychixiehub.io"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
