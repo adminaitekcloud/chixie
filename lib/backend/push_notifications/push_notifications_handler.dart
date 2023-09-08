@@ -154,11 +154,6 @@ final parametersBuilderMap =
       ),
   'createGroupChat': ParameterData.none(),
   'intro': ParameterData.none(),
-  'PhaseOneGame': ParameterData.none(),
-  'StartGame': ParameterData.none(),
-  'EggPick': ParameterData.none(),
-  'ChooseFarm': ParameterData.none(),
-  'StartTimerHatch': ParameterData.none(),
   'SettingsNew': ParameterData.none(),
   'MainHome': ParameterData.none(),
   'TalktoChixie': ParameterData.none(),
@@ -178,6 +173,8 @@ final parametersBuilderMap =
         },
       ),
   'hatchFarm': ParameterData.none(),
+  'All_Users': ParameterData.none(),
+  'MembersAll': ParameterData.none(),
 };
 
 Map<String, dynamic> getInitialParameterData(Map<String, dynamic> data) {

@@ -33,7 +33,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
       vsync: this,
       length: 2,
       initialIndex: 0,
-    );
+    )..addListener(() => setState(() {}));
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
@@ -140,7 +140,6 @@ class _NotificationWidgetState extends State<NotificationWidget>
                           ),
                         ],
                         controller: _model.tabBarController,
-                        onTap: (value) => setState(() {}),
                       ),
                     ),
                     Expanded(
@@ -273,7 +272,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                 ),
                                               ),
                                               alignment: AlignmentDirectional(
-                                                  0.0, 0.0),
+                                                  0.00, 0.00),
                                               child: Icon(
                                                 Icons.check_rounded,
                                                 color:
@@ -389,7 +388,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                 ),
                                               ),
                                               alignment: AlignmentDirectional(
-                                                  0.0, 0.0),
+                                                  0.00, 0.00),
                                               child: Icon(
                                                 Icons.check_rounded,
                                                 color:
@@ -519,7 +518,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                 ),
                                               ),
                                               alignment: AlignmentDirectional(
-                                                  0.0, 0.0),
+                                                  0.00, 0.00),
                                               child: Icon(
                                                 Icons.check_rounded,
                                                 color:
@@ -635,7 +634,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                 ),
                                               ),
                                               alignment: AlignmentDirectional(
-                                                  0.0, 0.0),
+                                                  0.00, 0.00),
                                               child: Icon(
                                                 Icons.check_rounded,
                                                 color:
@@ -751,7 +750,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                 ),
                                               ),
                                               alignment: AlignmentDirectional(
-                                                  0.0, 0.0),
+                                                  0.00, 0.00),
                                               child: Icon(
                                                 Icons.radio_button_checked,
                                                 color:
@@ -867,7 +866,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                 ),
                                               ),
                                               alignment: AlignmentDirectional(
-                                                  0.0, 0.0),
+                                                  0.00, 0.00),
                                               child: Icon(
                                                 Icons.radio_button_checked,
                                                 color:

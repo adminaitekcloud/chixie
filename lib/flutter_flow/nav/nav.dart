@@ -218,31 +218,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => IntroWidget(),
         ),
         FFRoute(
-          name: 'PhaseOneGame',
-          path: '/phaseOneGame',
-          builder: (context, params) => PhaseOneGameWidget(),
-        ),
-        FFRoute(
-          name: 'StartGame',
-          path: '/startGame',
-          builder: (context, params) => StartGameWidget(),
-        ),
-        FFRoute(
-          name: 'EggPick',
-          path: '/eggPick',
-          builder: (context, params) => EggPickWidget(),
-        ),
-        FFRoute(
-          name: 'ChooseFarm',
-          path: '/chooseFarm',
-          builder: (context, params) => ChooseFarmWidget(),
-        ),
-        FFRoute(
-          name: 'StartTimerHatch',
-          path: '/startTimerHatch',
-          builder: (context, params) => StartTimerHatchWidget(),
-        ),
-        FFRoute(
           name: 'SettingsNew',
           path: '/settingsNew',
           builder: (context, params) => params.isEmpty
@@ -300,6 +275,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'hatchFarm',
           path: '/hatchFarm',
           builder: (context, params) => HatchFarmWidget(),
+        ),
+        FFRoute(
+          name: 'All_Users',
+          path: '/allUsers',
+          builder: (context, params) => AllUsersWidget(),
+        ),
+        FFRoute(
+          name: 'MembersAll',
+          path: '/membersAll',
+          builder: (context, params) => MembersAllWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

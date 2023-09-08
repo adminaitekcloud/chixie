@@ -58,8 +58,11 @@ class _EmptymessageWidgetState extends State<EmptymessageWidget> {
                 'You don’t have message yet!',
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).headlineSmall.override(
-                      fontFamily: 'Open Sans',
+                      fontFamily:
+                          FlutterFlowTheme.of(context).headlineSmallFamily,
                       color: FlutterFlowTheme.of(context).primaryText,
+                      useGoogleFonts: GoogleFonts.asMap().containsKey(
+                          FlutterFlowTheme.of(context).headlineSmallFamily),
                     ),
               ),
             ],

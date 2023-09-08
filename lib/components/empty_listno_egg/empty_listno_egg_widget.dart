@@ -59,8 +59,11 @@ class _EmptyListnoEggWidgetState extends State<EmptyListnoEggWidget> {
                 'Seems you don’t have  data here!',
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).headlineSmall.override(
-                      fontFamily: 'Open Sans',
+                      fontFamily:
+                          FlutterFlowTheme.of(context).headlineSmallFamily,
                       color: FlutterFlowTheme.of(context).primaryText,
+                      useGoogleFonts: GoogleFonts.asMap().containsKey(
+                          FlutterFlowTheme.of(context).headlineSmallFamily),
                     ),
               ),
             ],
@@ -100,6 +103,8 @@ class _EmptyListnoEggWidgetState extends State<EmptyListnoEggWidget> {
                     color: Colors.white,
                     fontSize: 16.0,
                     fontWeight: FontWeight.normal,
+                    useGoogleFonts: GoogleFonts.asMap().containsKey(
+                        FlutterFlowTheme.of(context).titleSmallFamily),
                   ),
               elevation: 2.0,
               borderSide: BorderSide(
