@@ -114,7 +114,6 @@ final parametersBuilderMap =
   'login': ParameterData.none(),
   'createAccount': ParameterData.none(),
   'createDogProfile': ParameterData.none(),
-  'createYourProfile': ParameterData.none(),
   'forgotPassword': ParameterData.none(),
   'homePage': ParameterData.none(),
   'profilePage': ParameterData.none(),

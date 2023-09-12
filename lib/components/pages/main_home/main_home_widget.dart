@@ -83,6 +83,13 @@ class _MainHomeWidgetState extends State<MainHomeWidget>
     super.initState();
     _model = createModel(context, () => MainHomeModel());
 
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      if (valueOrDefault(currentUserDocument?.sponsorId, 0) == null) {
+        context.pushNamed('editUserProfile');
+      }
+    });
+
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
@@ -132,17 +139,15 @@ class _MainHomeWidgetState extends State<MainHomeWidget>
                         EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                     child: AuthUserStreamWidget(
                       builder: (context) => Text(
-                        valueOrDefault<String>(
-                          currentUserDisplayName,
-                          'My Name Here',
-                        ),
+                        'cxt-${valueOrDefault(currentUserDocument?.walletaddress, '')}',
                         style: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .override(
                               fontFamily: FlutterFlowTheme.of(context)
                                   .headlineMediumFamily,
                               color: Colors.white,
-                              fontSize: 22.0,
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.normal,
                               useGoogleFonts: GoogleFonts.asMap().containsKey(
                                   FlutterFlowTheme.of(context)
                                       .headlineMediumFamily),

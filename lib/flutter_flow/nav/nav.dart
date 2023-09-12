@@ -103,11 +103,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => CreateDogProfileWidget(),
         ),
         FFRoute(
-          name: 'createYourProfile',
-          path: '/createYourProfile',
-          builder: (context, params) => CreateYourProfileWidget(),
-        ),
-        FFRoute(
           name: 'forgotPassword',
           path: '/forgotPassword',
           builder: (context, params) => ForgotPasswordWidget(),

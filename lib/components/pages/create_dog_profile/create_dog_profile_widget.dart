@@ -419,7 +419,7 @@ class _CreateDogProfileWidgetState extends State<CreateDogProfileWidget> {
                               0.0, 0.0, 20.0, 40.0),
                           child: FFButtonWidget(
                             onPressed: () async {
-                              context.goNamed('createYourProfile');
+                              context.goNamed('editUserProfile');
                             },
                             text: 'Skip',
                             options: FFButtonOptions(
@@ -470,7 +470,7 @@ class _CreateDogProfileWidgetState extends State<CreateDogProfileWidget> {
                                   ),
                                   dogsRecordReference);
 
-                              context.goNamed('createYourProfile');
+                              context.goNamed('editUserProfile');
 
                               setState(() {});
                             },

@@ -64,11 +64,6 @@ class _TalktoChixieWidgetState extends State<TalktoChixieWidget> {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Icon(
-                Icons.settings_outlined,
-                color: FlutterFlowTheme.of(context).secondaryText,
-                size: 24.0,
-              ),
               Text(
                 'Talk to CHIXIE WIXIE',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
@@ -107,8 +102,7 @@ class _TalktoChixieWidgetState extends State<TalktoChixieWidget> {
             color: FlutterFlowTheme.of(context).secondaryBackground,
           ),
           child: FlutterFlowWebView(
-            content:
-                'https://flowise-znxn.onrender.com/chatbot/c4419691-3a53-4ce6-b1d0-a13fa2558d3f',
+            content: 'https://personalchat.online/chixie/',
             bypass: false,
             width: 390.0,
             height: 844.0,

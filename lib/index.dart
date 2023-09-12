@@ -4,8 +4,6 @@ export '/components/pages/create_account/create_account_widget.dart'
     show CreateAccountWidget;
 export '/components/pages/create_dog_profile/create_dog_profile_widget.dart'
     show CreateDogProfileWidget;
-export '/components/pages/create_your_profile/create_your_profile_widget.dart'
-    show CreateYourProfileWidget;
 export '/components/pages/forgot_password/forgot_password_widget.dart'
     show ForgotPasswordWidget;
 export '/components/pages/home_page/home_page_widget.dart' show HomePageWidget;

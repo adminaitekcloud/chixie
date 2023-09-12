@@ -363,7 +363,10 @@ class _EditUserProfileWidgetState extends State<EditUserProfileWidget> {
                                 child: TextFormField(
                                   controller: _model.userNameController ??=
                                       TextEditingController(
-                                    text: editUserProfileUsersRecord.userName,
+                                    text: valueOrDefault<String>(
+                                      editUserProfileUsersRecord.userName,
+                                      '@username',
+                                    ),
                                   ),
                                   obscureText: false,
                                   decoration: InputDecoration(
@@ -436,7 +439,7 @@ class _EditUserProfileWidgetState extends State<EditUserProfileWidget> {
                                       TextEditingController(
                                     text: valueOrDefault<String>(
                                       editUserProfileUsersRecord.phoneNumber,
-                                      '09123456789',
+                                      '+639123456789',
                                     ),
                                   ),
                                   obscureText: false,
@@ -512,15 +515,25 @@ class _EditUserProfileWidgetState extends State<EditUserProfileWidget> {
                             onPressed: () async {
                               await currentUserReference!
                                   .update(createUsersRecordData(
-                                displayName: _model.yourNameController.text,
-                                userName: _model.userNameController.text,
-                                photoUrl: _model.uploadedFileUrl,
-                                sponsorId: editUserProfileUsersRecord.sponsorId,
+                                displayName: valueOrDefault<String>(
+                                  _model.yourNameController.text,
+                                  'Jhon Cena',
+                                ),
                                 cxt: 0,
                                 phoneNumber: _model.userPhoneController.text,
-                                refferralId: valueOrDefault<int>(
-                                  random_data.randomInteger(100000, 999999),
-                                  123456,
+                                sponsorId: int.tryParse(
+                                    _model.yourSponsorController.text),
+                                userName: valueOrDefault<String>(
+                                  _model.userNameController.text,
+                                  '@jhoncena2023',
+                                ),
+                                currentcxtBalance: 0,
+                                walletaddress: random_data.randomString(
+                                  16,
+                                  17,
+                                  true,
+                                  true,
+                                  true,
                                 ),
                               ));
 

@@ -143,7 +143,19 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                           ),
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
-                                              .headlineSmall,
+                                              .headlineSmall
+                                              .override(
+                                                fontFamily:
+                                                    FlutterFlowTheme.of(context)
+                                                        .headlineSmallFamily,
+                                                fontSize: 16.0,
+                                                fontWeight: FontWeight.normal,
+                                                useGoogleFonts: GoogleFonts
+                                                        .asMap()
+                                                    .containsKey(FlutterFlowTheme
+                                                            .of(context)
+                                                        .headlineSmallFamily),
+                                              ),
                                         ),
                                         Align(
                                           alignment:
@@ -204,8 +216,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 16.0, 0.0),
                                 child: Container(
-                                  width: 50.0,
-                                  height: 50.0,
+                                  width: 35.0,
+                                  height: 35.0,
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context).primary,
                                     borderRadius: BorderRadius.circular(90.0),
