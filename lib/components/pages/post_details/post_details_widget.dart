@@ -65,7 +65,7 @@ class _PostDetailsWidgetState extends State<PostDetailsWidget> {
                 height: 50.0,
                 child: CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(
-                    Color(0xFF151136),
+                    FlutterFlowTheme.of(context).primaryText,
                   ),
                 ),
               ),
@@ -195,17 +195,17 @@ class _PostDetailsWidgetState extends State<PostDetailsWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       1.0, 1.0, 1.0, 1.0),
                                   child: Container(
-                                    width: 40.0,
-                                    height: 40.0,
+                                    width: 35.0,
+                                    height: 35.0,
                                     clipBehavior: Clip.antiAlias,
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
-                                    child: Image.network(
-                                      valueOrDefault<String>(
-                                        widget.userRecord?.photoUrl,
-                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/wiwa-1eegbh/assets/hrmz9fn0anpw/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg',
-                                      ),
+                                    child: CachedNetworkImage(
+                                      fadeInDuration: Duration(milliseconds: 0),
+                                      fadeOutDuration:
+                                          Duration(milliseconds: 0),
+                                      imageUrl: widget.userRecord!.photoUrl,
                                       fit: BoxFit.fitWidth,
                                     ),
                                   ),
@@ -423,7 +423,8 @@ class _PostDetailsWidgetState extends State<PostDetailsWidget> {
                                         child: CircularProgressIndicator(
                                           valueColor:
                                               AlwaysStoppedAnimation<Color>(
-                                            Color(0xFF151136),
+                                            FlutterFlowTheme.of(context)
+                                                .primaryText,
                                           ),
                                         ),
                                       ),
@@ -471,7 +472,9 @@ class _PostDetailsWidgetState extends State<PostDetailsWidget> {
                                                     valueColor:
                                                         AlwaysStoppedAnimation<
                                                             Color>(
-                                                      Color(0xFF151136),
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primaryText,
                                                     ),
                                                   ),
                                                 ),

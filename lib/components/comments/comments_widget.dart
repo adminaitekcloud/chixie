@@ -66,7 +66,7 @@ class _CommentsWidgetState extends State<CommentsWidget> {
                 height: 50.0,
                 child: CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(
-                    Color(0xFF151136),
+                    FlutterFlowTheme.of(context).primaryText,
                   ),
                 ),
               ),
@@ -122,7 +122,7 @@ class _CommentsWidgetState extends State<CommentsWidget> {
                                 height: 50.0,
                                 child: CircularProgressIndicator(
                                   valueColor: AlwaysStoppedAnimation<Color>(
-                                    Color(0xFF151136),
+                                    FlutterFlowTheme.of(context).primaryText,
                                   ),
                                 ),
                               ),
@@ -164,7 +164,8 @@ class _CommentsWidgetState extends State<CommentsWidget> {
                                           child: CircularProgressIndicator(
                                             valueColor:
                                                 AlwaysStoppedAnimation<Color>(
-                                              Color(0xFF151136),
+                                              FlutterFlowTheme.of(context)
+                                                  .primaryText,
                                             ),
                                           ),
                                         ),

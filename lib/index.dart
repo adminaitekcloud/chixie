@@ -44,12 +44,11 @@ export '/components/pages/all_players_c_x_t/all_players_c_x_t_widget.dart'
     show AllPlayersCXTWidget;
 export '/components/pages/transactions/transactions_widget.dart'
     show TransactionsWidget;
-export '/components/pages/notification_download/notification_download_widget.dart'
+export '/components/notification_download/notification_download_widget.dart'
     show NotificationDownloadWidget;
 export '/components/pages/view_hatch/view_hatch_widget.dart'
     show ViewHatchWidget;
 export '/components/pages/hatch_farm/hatch_farm_widget.dart'
     show HatchFarmWidget;
 export '/components/pages/all_users/all_users_widget.dart' show AllUsersWidget;
-export '/components/pages/members_all/members_all_widget.dart'
-    show MembersAllWidget;
+export '/components/members_all/members_all_widget.dart' show MembersAllWidget;

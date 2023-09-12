@@ -174,7 +174,7 @@ class _AddChatUsersWidgetState extends State<AddChatUsersWidget> {
                       height: 50.0,
                       child: CircularProgressIndicator(
                         valueColor: AlwaysStoppedAnimation<Color>(
-                          Color(0xFF151136),
+                          FlutterFlowTheme.of(context).primaryText,
                         ),
                       ),
                     ),

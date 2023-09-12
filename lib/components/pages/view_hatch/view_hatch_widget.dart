@@ -66,7 +66,7 @@ class _ViewHatchWidgetState extends State<ViewHatchWidget>
                 height: 50.0,
                 child: CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(
-                    Color(0xFF151136),
+                    FlutterFlowTheme.of(context).primaryText,
                   ),
                 ),
               ),
@@ -312,7 +312,8 @@ class _ViewHatchWidgetState extends State<ViewHatchWidget>
                                         child: CircularProgressIndicator(
                                           valueColor:
                                               AlwaysStoppedAnimation<Color>(
-                                            Color(0xFF151136),
+                                            FlutterFlowTheme.of(context)
+                                                .primaryText,
                                           ),
                                         ),
                                       ),
@@ -450,7 +451,8 @@ class _ViewHatchWidgetState extends State<ViewHatchWidget>
                                       child: CircularProgressIndicator(
                                         valueColor:
                                             AlwaysStoppedAnimation<Color>(
-                                          Color(0xFF151136),
+                                          FlutterFlowTheme.of(context)
+                                              .primaryText,
                                         ),
                                       ),
                                     ),
@@ -497,7 +499,9 @@ class _ViewHatchWidgetState extends State<ViewHatchWidget>
                                                     valueColor:
                                                         AlwaysStoppedAnimation<
                                                             Color>(
-                                                      Color(0xFF151136),
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primaryText,
                                                     ),
                                                   ),
                                                 ),

@@ -67,7 +67,7 @@ class _ViewProfilePageOtherWidgetState extends State<ViewProfilePageOtherWidget>
                 height: 50.0,
                 child: CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(
-                    Color(0xFF151136),
+                    FlutterFlowTheme.of(context).primaryText,
                   ),
                 ),
               ),
@@ -318,7 +318,8 @@ class _ViewProfilePageOtherWidgetState extends State<ViewProfilePageOtherWidget>
                                         child: CircularProgressIndicator(
                                           valueColor:
                                               AlwaysStoppedAnimation<Color>(
-                                            Color(0xFF151136),
+                                            FlutterFlowTheme.of(context)
+                                                .primaryText,
                                           ),
                                         ),
                                       ),
@@ -457,7 +458,8 @@ class _ViewProfilePageOtherWidgetState extends State<ViewProfilePageOtherWidget>
                                       child: CircularProgressIndicator(
                                         valueColor:
                                             AlwaysStoppedAnimation<Color>(
-                                          Color(0xFF151136),
+                                          FlutterFlowTheme.of(context)
+                                              .primaryText,
                                         ),
                                       ),
                                     ),
@@ -504,7 +506,9 @@ class _ViewProfilePageOtherWidgetState extends State<ViewProfilePageOtherWidget>
                                                     valueColor:
                                                         AlwaysStoppedAnimation<
                                                             Color>(
-                                                      Color(0xFF151136),
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primaryText,
                                                     ),
                                                   ),
                                                 ),

@@ -89,7 +89,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                 height: 50.0,
                 child: CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(
-                    Color(0xFF151136),
+                    FlutterFlowTheme.of(context).primaryText,
                   ),
                 ),
               ),
@@ -410,7 +410,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                             child: CircularProgressIndicator(
                                               valueColor:
                                                   AlwaysStoppedAnimation<Color>(
-                                                Color(0xFF151136),
+                                                FlutterFlowTheme.of(context)
+                                                    .primaryText,
                                               ),
                                             ),
                                           ),
@@ -424,7 +425,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                             child: CircularProgressIndicator(
                                               valueColor:
                                                   AlwaysStoppedAnimation<Color>(
-                                                Color(0xFF151136),
+                                                FlutterFlowTheme.of(context)
+                                                    .primaryText,
                                               ),
                                             ),
                                           ),
@@ -582,7 +584,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                                                           .start,
                                                                   children: [
                                                                     Text(
-                                                                      'Egg Hatching',
+                                                                      'Egg Hatched',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .headlineSmall
@@ -618,13 +620,13 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                                                             ),
                                                                             'Done',
                                                                           )}',
-                                                                          'Successfull',
+                                                                          'Successfully',
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                              color: FlutterFlowTheme.of(context).tertiary,
+                                                                              color: Color(0xFFA16044),
                                                                               useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                             ),
                                                                       ),
@@ -724,7 +726,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                         child: CircularProgressIndicator(
                                           valueColor:
                                               AlwaysStoppedAnimation<Color>(
-                                            Color(0xFF151136),
+                                            FlutterFlowTheme.of(context)
+                                                .primaryText,
                                           ),
                                         ),
                                       ),
@@ -766,7 +769,9 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                                     valueColor:
                                                         AlwaysStoppedAnimation<
                                                             Color>(
-                                                      Color(0xFF151136),
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primaryText,
                                                     ),
                                                   ),
                                                 ),

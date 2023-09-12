@@ -76,7 +76,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+      backgroundColor: FlutterFlowTheme.of(context).primaryText,
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await showModalBottomSheet(
@@ -130,7 +130,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
               buttonSize: 46.0,
               icon: Icon(
                 Icons.notifications_outlined,
-                color: FlutterFlowTheme.of(context).grayIcon,
+                color: FlutterFlowTheme.of(context).primaryText,
                 size: 24.0,
               ),
               onPressed: () {
@@ -171,7 +171,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                 stream: queryUserPostsRecord(
                   queryBuilder: (userPostsRecord) =>
                       userPostsRecord.orderBy('timePosted', descending: true),
-                  limit: 50,
                 ),
                 builder: (context, snapshot) {
                   // Customize what your widget looks like when it's loading.
@@ -182,7 +181,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         height: 50.0,
                         child: CircularProgressIndicator(
                           valueColor: AlwaysStoppedAnimation<Color>(
-                            Color(0xFF151136),
+                            FlutterFlowTheme.of(context).primaryText,
                           ),
                         ),
                       ),
@@ -210,8 +209,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 8.0),
                         child: StreamBuilder<UsersRecord>(
-                          stream: UsersRecord.getDocument(
-                              socialFeedUserPostsRecord.postUser!),
+                          stream: _model.posted(
+                            requestFn: () => UsersRecord.getDocument(
+                                socialFeedUserPostsRecord.postUser!),
+                          ),
                           builder: (context, snapshot) {
                             // Customize what your widget looks like when it's loading.
                             if (!snapshot.hasData) {
@@ -221,7 +222,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   height: 50.0,
                                   child: CircularProgressIndicator(
                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                      Color(0xFF151136),
+                                      FlutterFlowTheme.of(context).primaryText,
                                     ),
                                   ),
                                 ),
@@ -369,7 +370,22 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .titleMedium,
+                                                        .titleMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleMediumFamily,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryText,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleMediumFamily),
+                                                        ),
                                                   ),
                                                 ),
                                               ],
@@ -571,8 +587,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 .override(
                                                                   fontFamily:
                                                                       'Lexend Deca',
-                                                                  color: Color(
-                                                                      0xFF8B97A2),
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondary,
                                                                   fontSize:
                                                                       14.0,
                                                                   fontWeight:
@@ -594,7 +611,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 children: [
                                                   Icon(
                                                     Icons.mode_comment_outlined,
-                                                    color: Color(0xFF95A1AC),
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryText,
                                                     size: 24.0,
                                                   ),
                                                   Padding(

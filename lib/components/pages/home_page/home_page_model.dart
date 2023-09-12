@@ -10,6 +10,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_video_player.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
+import '/flutter_flow/request_manager.dart';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -20,11 +22,32 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 class HomePageModel extends FlutterFlowModel {
+  /// Query cache managers for this widget.
+
+  final _postedManager = StreamRequestManager<UsersRecord>();
+  Stream<UsersRecord> posted({
+    String? uniqueQueryKey,
+    bool? overrideCache,
+    required Stream<UsersRecord> Function() requestFn,
+  }) =>
+      _postedManager.performRequest(
+        uniqueQueryKey: uniqueQueryKey,
+        overrideCache: overrideCache,
+        requestFn: requestFn,
+      );
+  void clearPostedCache() => _postedManager.clear();
+  void clearPostedCacheKey(String? uniqueKey) =>
+      _postedManager.clearRequest(uniqueKey);
+
   /// Initialization and disposal methods.
 
   void initState(BuildContext context) {}
 
-  void dispose() {}
+  void dispose() {
+    /// Dispose query cache managers for this widget.
+
+    clearPostedCache();
+  }
 
   /// Action blocks are added here.
 

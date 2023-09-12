@@ -94,8 +94,8 @@ class _HatchFarmWidgetState extends State<HatchFarmWidget>
                                 4.0, 4.0, 4.0, 4.0),
                             child: AuthUserStreamWidget(
                               builder: (context) => Container(
-                                width: 50.0,
-                                height: 50.0,
+                                width: 35.0,
+                                height: 35.0,
                                 clipBehavior: Clip.antiAlias,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
@@ -171,7 +171,19 @@ class _HatchFarmWidgetState extends State<HatchFarmWidget>
                                           currentUserDisplayName,
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
-                                              .headlineSmall,
+                                              .headlineSmall
+                                              .override(
+                                                fontFamily:
+                                                    FlutterFlowTheme.of(context)
+                                                        .headlineSmallFamily,
+                                                fontSize: 16.0,
+                                                fontWeight: FontWeight.normal,
+                                                useGoogleFonts: GoogleFonts
+                                                        .asMap()
+                                                    .containsKey(FlutterFlowTheme
+                                                            .of(context)
+                                                        .headlineSmallFamily),
+                                              ),
                                         ),
                                       ),
                                     ],
