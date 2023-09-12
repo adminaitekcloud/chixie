@@ -483,7 +483,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                           ));
 
                                       context.pushNamedAuth(
-                                          'createYourProfile', context.mounted);
+                                          'editUserProfile', context.mounted);
                                     },
                                     text: 'Create Account',
                                     options: FFButtonOptions(

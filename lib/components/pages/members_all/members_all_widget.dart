@@ -538,11 +538,7 @@ class _MembersAllWidgetState extends State<MembersAllWidget> {
                                                       MainAxisSize.max,
                                                   children: [
                                                     Text(
-                                                      'Eggs   ${listViewUsersRecord.dogs.contains(listViewUsersRecord.dogs[valueOrDefault<int>(
-                                                            listViewUsersRecord
-                                                                .dogs.length,
-                                                            0,
-                                                          )]).toString()}',
+                                                      'Total Assets : 0',
                                                       style:
                                                           FlutterFlowTheme.of(
                                                                   context)
