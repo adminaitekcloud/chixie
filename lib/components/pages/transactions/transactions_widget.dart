@@ -51,7 +51,7 @@ class _TransactionsWidgetState extends State<TransactionsWidget> {
               style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily:
                         FlutterFlowTheme.of(context).headlineMediumFamily,
-                    color: Colors.white,
+                    color: FlutterFlowTheme.of(context).primaryText,
                     fontSize: 22.0,
                     useGoogleFonts: GoogleFonts.asMap().containsKey(
                         FlutterFlowTheme.of(context).headlineMediumFamily),

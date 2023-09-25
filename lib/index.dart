@@ -35,7 +35,7 @@ export '/components/pages/create_group_chat/create_group_chat_widget.dart'
 export '/components/pages/intro/intro_widget.dart' show IntroWidget;
 export '/components/pages/settings_new/settings_new_widget.dart'
     show SettingsNewWidget;
-export '/components/pages/main_home/main_home_widget.dart' show MainHomeWidget;
+export '/components/main_home/main_home_widget.dart' show MainHomeWidget;
 export '/components/pages/talkto_chixie/talkto_chixie_widget.dart'
     show TalktoChixieWidget;
 export '/components/pages/user_assets/user_assets_widget.dart'

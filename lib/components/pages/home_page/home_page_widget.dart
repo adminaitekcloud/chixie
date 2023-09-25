@@ -93,7 +93,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                 ),
               );
             },
-          ).then((value) => setState(() {}));
+          ).then((value) => safeSetState(() {}));
         },
         backgroundColor: Color(0xFF4B39EF),
         elevation: 8.0,
@@ -210,6 +210,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 8.0),
                         child: StreamBuilder<UsersRecord>(
                           stream: _model.posted(
+                            uniqueQueryKey: socialFeedUserPostsRecord.postTitle,
                             requestFn: () => UsersRecord.getDocument(
                                 socialFeedUserPostsRecord.postUser!),
                           ),

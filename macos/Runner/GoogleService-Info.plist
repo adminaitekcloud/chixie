@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>430564149345-d7e62n6pat758j8gq75rj4k7mq20elgn.apps.googleusercontent.com</string>
+	<string>430564149345-bl8pa9hnp4uh8t98bk4gg5jcjmo2ui6o.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.430564149345-d7e62n6pat758j8gq75rj4k7mq20elgn</string>
+	<string>com.googleusercontent.apps.430564149345-bl8pa9hnp4uh8t98bk4gg5jcjmo2ui6o</string>
 	<key>ANDROID_CLIENT_ID</key>
 	<string>430564149345-1ts2df4fubv67mdd0sgkqrnumk3eds44.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDl3ZmLMT1CVx6cfUJrml22ZTAHvXDJVUk</string>
+	<string>AIzaSyARSkqgf1wGsye7K84OtYQXBatf05GTyvE</string>
 	<key>GCM_SENDER_ID</key>
 	<string>430564149345</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.gameplaychixiehub.io</string>
+	<string>com.gameplayc4hixiehub.io</string>
 	<key>PROJECT_ID</key>
 	<string>master23-9c6a4</string>
 	<key>STORAGE_BUCKET</key>
@@ -31,7 +31,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:430564149345:ios:3f269c8e470e6fa1ca0220</string>
+	<string>1:430564149345:ios:d0dee0d12c9cb4e2ca0220</string>
 	<key>DATABASE_URL</key>
 	<string>https://master23-9c6a4-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </dict>

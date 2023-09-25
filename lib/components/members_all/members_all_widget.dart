@@ -576,7 +576,8 @@ class _MembersAllWidgetState extends State<MembersAllWidget> {
                                                   ),
                                                 );
                                               },
-                                            ).then((value) => setState(() {}));
+                                            ).then(
+                                                (value) => safeSetState(() {}));
                                           },
                                           text: 'Assets',
                                           options: FFButtonOptions(

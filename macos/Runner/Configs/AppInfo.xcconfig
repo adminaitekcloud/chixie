@@ -8,7 +8,7 @@
 PRODUCT_NAME = Chixie
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.gameplaychixiehub.io
+PRODUCT_BUNDLE_IDENTIFIER = com.gameplayc4hixiehub.io
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2022 Chixie. All rights reserved.

@@ -40,10 +40,54 @@
               "client_type": 3
             },
             {
-              "client_id": "430564149345-d7e62n6pat758j8gq75rj4k7mq20elgn.apps.googleusercontent.com",
+              "client_id": "430564149345-bl8pa9hnp4uh8t98bk4gg5jcjmo2ui6o.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.gameplaychixiehub.io"
+                "bundle_id": "com.gameplayc4hixiehub.io"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430564149345:android:cfa88e8d26fb8248ca0220",
+        "android_client_info": {
+          "package_name": "com.gameplayc4hixiehub.io"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430564149345-vk5ph4hsnktmjr0o9vmuedfs5gmjqn37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gameplayc4hixiehub.io",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "430564149345-s31eoc932ar0l6u0rf8491q48cfh820d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB79fIircqx1sxs800OY7XPutMNPMK6xEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104215450841844687074",
+              "client_type": 3
+            },
+            {
+              "client_id": "430564149345-bl8pa9hnp4uh8t98bk4gg5jcjmo2ui6o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gameplayc4hixiehub.io"
               }
             }
           ]
@@ -84,10 +128,10 @@
               "client_type": 3
             },
             {
-              "client_id": "430564149345-d7e62n6pat758j8gq75rj4k7mq20elgn.apps.googleusercontent.com",
+              "client_id": "430564149345-bl8pa9hnp4uh8t98bk4gg5jcjmo2ui6o.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.gameplaychixiehub.io"
+                "bundle_id": "com.gameplayc4hixiehub.io"
               }
             }
           ]

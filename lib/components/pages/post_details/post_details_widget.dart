@@ -171,7 +171,7 @@ class _PostDetailsWidgetState extends State<PostDetailsWidget> {
                                               ),
                                             );
                                           },
-                                        ).then((value) => setState(() {}));
+                                        ).then((value) => safeSetState(() {}));
                                       },
                                     ),
                                 ],

@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
 set(BINARY_NAME "Chixie")
-set(APPLICATION_ID "com.gameplaychixiehub.io")
+set(APPLICATION_ID "com.gameplayc4hixiehub.io")
 
 cmake_policy(SET CMP0063 NEW)
 
